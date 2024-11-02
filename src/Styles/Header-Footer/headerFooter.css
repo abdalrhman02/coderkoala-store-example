@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.disFlex {
+  display: flex;
+}
+
+.disNone {
+  display: none;
+}
+
+.disBlock {
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #6533e1;
+}
+header .cart {
+  display: flex;
+  gap: 18px;
+}
+header .cart i {
+  font-size: 28px;
+}
+header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo .logo-img {
+  width: 180px;
+}
+header .search {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  margin-top: 10px;
+}
+header .search .search-icon {
+  position: relative;
+  background-color: #6533e1;
+  height: 100%;
+  width: 45px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+header .search .search-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  font-size: 22px;
+}
+header .search input {
+  height: 100%;
+  width: 22em;
+  padding: 0px 10px;
+  background-color: #ebebeb;
+  border: none;
+  outline: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+header .search input:focus {
+  border: none;
+}
+header .bar i {
+  font-size: 27px;
+}
+
+.header-monitor {
+  padding: 15px 150px;
+}
+
+.header-mobile {
+  padding: 15px 50px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px;
+  color: #FFF;
+  background-color: #6533e1;
+  border-top: 10px solid #00e68d;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+footer .socials img {
+  width: 35px;
+}
+footer .socials p {
+  font-size: 18px;
+  font-weight: 400;
+}
+footer p {
+  font-size: 18px;
+  font-weight: 500;
+}/*# sourceMappingURL=headerFooter.css.map */

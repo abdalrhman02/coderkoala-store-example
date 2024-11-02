@@ -1,0 +1,33 @@
+*{margin:0; padding:0; font-family:'Almarai'}
+
+// Sass Variables //
+$f-clr: #6533e1;
+$s-clr: #00e68d;
+$t-clr: #151550;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+// Elements
+a{text-decoration:none; color:black}
+ul{list-style-type:none;}
+
+// Classes
+.disFlex{display:flex;}
+.disNone{display:none;}
+.disBlock{display:block;}
+
+
+// Mixins
+@mixin center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin fl-sb {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
