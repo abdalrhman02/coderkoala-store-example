@@ -14,23 +14,29 @@ function Footer() {
 
     return isMobile ? (
         <footer>
-            <div className="socials">
-                <Link to={""}><img src={require('../Images/Socials/instagram.png')} /></Link>
-                <Link to={""}><img src={require('../Images/Socials/facebook.png')} /></Link>
-                <Link to={""}><img src={require('../Images/Socials/whatsapp.png')} /></Link>
+            <div className="container">
+                <div className="socials">
+                    <Link to={""}><img src={require('../Images/Socials/instagram.png')} /></Link>
+                    <Link to={""}><img src={require('../Images/Socials/facebook.png')} /></Link>
+                    <Link to={""}><img src={require('../Images/Socials/whatsapp.png')} /></Link>
+                </div>
+            
+                <p>برمجة و  تصميم شركة كودركوالا © 2024</p>
             </div>
         </footer>
     ) : (
         <footer>
-            <div className="socials">
-                <Link to={""}><img src={require('../Images/Socials/instagram.png')} /></Link>
-                <Link to={""}><img src={require('../Images/Socials/facebook.png')} /></Link>
-                <Link to={""}><img src={require('../Images/Socials/whatsapp.png')} /></Link>
-                <p>|</p>
-                <p>المتجر التجريبي</p>
-            </div>
+            <div className="container">
+                <div className="socials">
+                    <Link to={""}><img src={require('../Images/Socials/instagram.png')} /></Link>
+                    <Link to={""}><img src={require('../Images/Socials/facebook.png')} /></Link>
+                    <Link to={""}><img src={require('../Images/Socials/whatsapp.png')} /></Link>
+                    <p>|</p>
+                    <p>المتجر التجريبي</p>
+                </div>
 
-            <p>برمجة و  تصميم شركة كودركوالا © 2024</p>
+                <p>برمجة و  تصميم شركة كودركوالا © 2024</p>
+            </div>
         </footer>
     )
 }

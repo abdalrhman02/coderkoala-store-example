@@ -12,14 +12,35 @@ function Header() {
     }, []);
 
     return isMobile ? (
-        <header className='header-mobile container'>
-            <div className='cart'>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
+        <header className='header-mobile'>
+            <div className='container'>
+                <div className='bar'>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
 
-            <div className="logo">
-                <img className='logo-img' src={require('../Images/logo.png')} />
+                <div className="logo">
+                    <img className='logo-img' src={require('../Images/logo.png')} />
+
+                    <div className='search'>
+                        <div className='search-icon'>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input className='' type='text' placeholder='ابحث عن منتج' />
+                    </div>
+                </div>
+
+                <div className='cart'>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </header>
+    ) : (
+        <header className='header-monitor'>
+            <div className='container'>
+                <div className="logo">
+                    <img className='logo-img' src={require('../Images/logo.png')} />
+                </div>
 
                 <div className='search'>
                     <div className='search-icon'>
@@ -27,28 +48,11 @@ function Header() {
                     </div>
                     <input className='' type='text' placeholder='ابحث عن منتج' />
                 </div>
-            </div>
 
-            <div className='bar'>
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    ) : (
-        <header className='header-monitor'>
-            <div className="logo">
-                <img className='logo-img' src={require('../Images/logo.png')} />
-            </div>
-
-            <div className='search'>
-                <div className='search-icon'>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div className='cart'>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </div>
-                <input className='' type='text' placeholder='ابحث عن منتج' />
-            </div>
-
-            <div className='cart'>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </header>
     )

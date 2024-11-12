@@ -1,9 +1,10 @@
 *{margin:0; padding:0; font-family:'Almarai'}
 
 // Sass Variables //
-$f-clr: #6533e1;
-$s-clr: #00e68d;
+$f-clr: #6533E1;
+$s-clr: #00CE7F;
 $t-clr: #151550;
+$button-hover: #01b872;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
@@ -16,6 +17,35 @@ ul{list-style-type:none;}
 .disFlex{display:flex;}
 .disNone{display:none;}
 .disBlock{display:block;}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .container {
+        margin: 0 40px
+    }
+}
+
+.btn {
+    background-color: $s-clr;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    width: 5em;
+    height: 1.7em;
+    font-size: 15px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $button-hover
+    }
+}
 
 
 // Mixins

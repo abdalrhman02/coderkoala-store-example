@@ -1,0 +1,236 @@
+@import '../GlobalRules/globalRules.scss';
+
+.title {
+    background-color: $f-clr;
+    padding: 6px 10px;
+    border-bottom: 10px solid $s-clr;
+
+    h2 {
+        font-size: 22px;
+        color: #FFF
+    }
+}
+
+.comment {
+    background-color: #EDEDED;
+    padding: 25px;
+    width: 40%;
+    border-radius: 10px;
+
+    .customer-info {
+        display: flex;
+        align-items: center;
+
+        img {
+
+        }
+
+        h3 {
+            margin-right: 7px
+        }
+    }
+
+    .customer-comment {
+        margin-top: 20px;
+        p {
+            line-height: 31px;
+        }
+    }
+}
+
+.sidebar {
+    flex: 1 1 15%;
+    background-color: #EDEDED;
+    width: 250px;
+    padding: 15px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 7px;
+        width: 100%;
+        height: 100%;
+
+        li {
+            width: 100%;
+
+            &:hover .section img {
+                transform: scale(1.08)
+            }
+
+            .section {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: #FFF;
+                padding: 9px 12px 9px 0;
+                border-radius: 7px;
+        
+                img {
+                    width: 30px;
+                    transition: 0.4s;
+                }
+        
+                p {
+        
+                }
+            }
+        }
+    }
+
+    
+}
+
+/* Header and Footer */
+header {
+    border-bottom: 5px solid $f-clr;
+    padding: 15px 0px;
+
+    .container {
+        @include fl-sb;
+    }
+
+    .cart {
+        display: flex;
+        gap: 18px;
+
+        i {
+            font-size: 28px;
+        }
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo-img {
+            width: 180px
+        }
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        margin-top: 10px;
+
+        .search-icon {
+            position: relative;
+            background-color: $f-clr;
+            height: 100%;
+            width: 45px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+
+            i {
+                @include center;
+                color: #FFF;
+                font-size: 23px;
+            }
+        }
+
+
+        input {
+            height: 100%;
+            width: 22em;
+            padding: 0px 10px;
+            background-color: #ebebeb;
+            border: none;
+            outline: none;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+
+            &:focus {
+                border: none
+            }
+        }
+    }
+
+
+    // In Mobile
+    .bar {
+
+        i {
+            font-size: 27px
+        }
+    }
+
+}
+
+
+footer {
+    padding: 20px 0px;
+    color: #FFF;
+    background-color: $f-clr;
+    border-top: 10px solid $s-clr;
+
+    .container {
+        @include fl-sb;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        img {
+            width: 35px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 700px) {
+    footer .container {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+/* Header and Footer End */
+
+
+/* Product Page and Product Card */
+
+.product-card {
+    width: fit-content;
+
+    .product-image {
+        padding: 20px;
+        img {
+            width: 110px
+        }
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: #EDEDED;
+        padding: 10px 0;
+        border-top: 1px solid black;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+
+        .product-name {
+            
+        }
+
+        .product-btn {
+
+        }
+    }
+}
+
+/* Product Page and Product Card End */

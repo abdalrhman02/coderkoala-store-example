@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.disFlex {
+  display: flex;
+}
+
+.disNone {
+  display: none;
+}
+
+.disBlock {
+  display: block;
+}
+
+.container {
+  margin: 0 90px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+.btn {
+  background-color: #00CE7F;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  width: 5em;
+  height: 1.7em;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #01b872;
+}
+
+.admin header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  border-bottom: 2px solid black;
+  padding: 15px 0;
+}
+.admin header img {
+  width: 10em;
+}
+.admin header p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.admin .container {
+  display: flex;
+  gap: 5em;
+}
+.admin .container .admin-sidebar {
+  background-color: #EDEDED;
+  border-left: 2px solid #6533E1;
+  width: 12em;
+  padding: 15px;
+}
+.admin .container .admin-sidebar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.admin .container .admin-sidebar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #FFF;
+  padding: 12px 15px;
+  border-radius: 7px;
+  width: 80%;
+}
+.admin .container .admin-sidebar ul li i {
+  font-size: 20px;
+  transition: 0.4s;
+}
+.admin .container .products {
+  width: 80%;
+}
+.admin .container .products .add-product {
+  margin: 40px 30px;
+}
+.admin .container .products .add-product h1 {
+  margin-bottom: 20px;
+}
+.admin .container .products .add-product .product-form {
+  background-color: #F5F5F5;
+  padding: 25px;
+}
+.admin .container .products .add-product .product-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em 5em;
+}
+.admin .container .products .add-product .product-form form .name-inp {
+  grid-area: nameInp;
+}
+.admin .container .products .add-product .product-form form .description-inp {
+  grid-area: descriptionInp;
+}
+.admin .container .products .add-product .product-form form .price-inp {
+  grid-area: priceInp;
+}
+.admin .container .products .add-product .product-form form .inp {
+  display: flex;
+  flex-direction: column;
+}
+.admin .container .products .add-product .product-form form .inp label {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.admin .container .products .add-product .product-form form .inp input {
+  width: 28em;
+  height: 2.4em;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.admin .container .products .add-product .product-form form .inp textarea {
+  width: 28em;
+  height: 15em;
+}
+.admin .container .products .add-product .product-form form .target {
+  grid-area: targetInp;
+}
+.admin .container .products .add-product .product-form form .target h4 {
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.admin .container .products .add-product .product-form form .target .options {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.admin .container .products .add-product .product-form form .target .options .opt {
+  display: flex;
+  align-items: center;
+}
+.admin .container .products .add-product .product-form form .target .options .opt p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.admin .container .products .add-product .product-form form .target .options .opt input {
+  width: 15px;
+  height: 15px;
+  margin-left: 7px;
+}
+.admin .container .products .add-product .product-form form .target .options .opt input:checked {
+  background-color: red;
+}
+.admin .container .products .add-product .product-form form .images-inp {
+  grid-area: imagesInp;
+}
+.admin .container .products .add-product .product-form form .images-inp h4 {
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.admin .container .products .add-product .product-form form .images-inp .add-imgs {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.admin .container .products .add-product .product-form form .images-inp .add-imgs .drop-area {
+  width: 200px;
+  height: 220px;
+  background-color: #FFF;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.admin .container .products .add-product .product-form form .images-inp .add-imgs .drop-area .img-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.admin .container .products .add-product .product-form form .images-inp .add-imgs .drop-area .img-view .plus-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+}
+.admin .container .products .add-product .product-form form .add-btn {
+  width: 100%;
+}
+.admin .container .products .add-product .product-form form .add-btn [type=submit] {
+  width: 7em;
+  height: 2.2em;
+  font-size: 18px;
+}
+.admin footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin footer p {
+  color: #FFF;
+  font-size: 18px;
+}/*# sourceMappingURL=adminPage.css.map */
