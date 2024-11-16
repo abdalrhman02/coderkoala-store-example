@@ -1,0 +1,107 @@
+@import '../GlobalRules/globalRules.scss';
+
+.cart-page {
+
+    .cart-page-content {
+        flex: 1 1 85%;
+        margin: 30px;
+
+        .the-order {
+            h1 {
+                margin-bottom: 20px
+            }
+        }
+
+        .submit-order {
+            margin: 100px 0;
+
+            h2 {
+                border: 1px solid black;
+                border-right: none;
+                border-left: none;
+                padding: 15px 0
+            }
+
+            .flex {
+                display: flex;
+                align-items: self-start;
+                justify-content: space-between;
+                margin-top: 3em;
+
+                .info-form {
+                    margin-top: 2em;
+                    width: 50%;
+
+                    form {
+    
+                        .inp {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 350px;
+                            margin-bottom: 30px;
+    
+                            label {
+                                width: 30%;
+                            }
+    
+                            input, select, textarea {
+                                width: 65%;
+                                font-size: 15px;
+                                height: 2.2em;
+                                padding-right: 7px;
+                            } 
+                        }
+    
+                        .textareaInp {
+                            align-items: self-start;
+                            textarea {
+                                height: 10em;
+                                max-height: 10em;
+                                max-width: 65%;
+                            }
+                        }
+
+                        .btn {
+                            font-size: 19px;
+                            width: 7em;
+                            height: 2em;
+                        }
+                    }
+                }
+    
+                .order-details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+                    width: 40%;
+                    background-color: $light-elements-background;
+                    border-radius: 5px;
+                    padding: 15px 25px;
+    
+                    .price, .discount, .full-price {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 18px
+                        }
+
+                        .n {
+                            font-weight: 600;
+                        }
+
+                        input {
+                            width: 50%;
+                            font-size: 15px;
+                            height: 2.2em;
+                            padding-right: 7px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

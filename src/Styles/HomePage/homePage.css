@@ -28,11 +28,11 @@ ul {
 
 .container {
   display: flex;
-  justify-content: space-between; /* Creates space between sidebar and content */
-  padding: 0 5vw; /* Adds responsive gaps on left and right */
-  gap: 2rem; /* Space between sidebar and content */
-  max-width: 1200px; /* Optional: Limit the container width */
-  margin: 0 auto; /* Center the container */
+  justify-content: space-between;
+  padding: 0 5vw;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {

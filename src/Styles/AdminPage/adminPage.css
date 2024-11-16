@@ -27,9 +27,12 @@ ul {
 }
 
 .container {
-  margin: 0 90px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -52,144 +55,97 @@ ul {
   background-color: #01b872;
 }
 
-.admin header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  border-bottom: 2px solid black;
-  padding: 15px 0;
+.admin-product-management .container .products {
+  width: 90%;
 }
-.admin header img {
-  width: 10em;
-}
-.admin header p {
-  font-size: 18px;
-  font-weight: 600;
-}
-.admin .container {
-  display: flex;
-  gap: 5em;
-}
-.admin .container .admin-sidebar {
-  background-color: #EDEDED;
-  border-left: 2px solid #6533E1;
-  width: 12em;
-  padding: 15px;
-}
-.admin .container .admin-sidebar ul {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 15px;
-}
-.admin .container .admin-sidebar ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: #FFF;
-  padding: 12px 15px;
-  border-radius: 7px;
-  width: 80%;
-}
-.admin .container .admin-sidebar ul li i {
-  font-size: 20px;
-  transition: 0.4s;
-}
-.admin .container .products {
-  width: 80%;
-}
-.admin .container .products .add-product {
+.admin-product-management .container .products .add-product {
   margin: 40px 30px;
 }
-.admin .container .products .add-product h1 {
+.admin-product-management .container .products .add-product h1 {
   margin-bottom: 20px;
 }
-.admin .container .products .add-product .product-form {
+.admin-product-management .container .products .add-product .product-form {
   background-color: #F5F5F5;
   padding: 25px;
 }
-.admin .container .products .add-product .product-form form {
+.admin-product-management .container .products .add-product .product-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.admin-product-management .container .products .add-product .product-form form .product-details {
   display: flex;
   flex-wrap: wrap;
   gap: 2em 5em;
 }
-.admin .container .products .add-product .product-form form .name-inp {
-  grid-area: nameInp;
-}
-.admin .container .products .add-product .product-form form .description-inp {
-  grid-area: descriptionInp;
-}
-.admin .container .products .add-product .product-form form .price-inp {
-  grid-area: priceInp;
-}
-.admin .container .products .add-product .product-form form .inp {
+.admin-product-management .container .products .add-product .product-form form .product-details .inp {
   display: flex;
   flex-direction: column;
 }
-.admin .container .products .add-product .product-form form .inp label {
+.admin-product-management .container .products .add-product .product-form form .product-details .inp label {
   font-size: 18px;
   margin-bottom: 7px;
 }
-.admin .container .products .add-product .product-form form .inp input {
+.admin-product-management .container .products .add-product .product-form form .product-details .inp input {
   width: 28em;
   height: 2.4em;
   border-radius: 3px;
   border: 1px solid black;
+  padding-right: 7px;
 }
-.admin .container .products .add-product .product-form form .inp textarea {
+.admin-product-management .container .products .add-product .product-form form .product-details .inp textarea {
   width: 28em;
   height: 15em;
+  padding: 7px 7px 0 0;
 }
-.admin .container .products .add-product .product-form form .target {
+.admin-product-management .container .products .add-product .product-form form .product-details .target {
   grid-area: targetInp;
 }
-.admin .container .products .add-product .product-form form .target h4 {
+.admin-product-management .container .products .add-product .product-form form .product-details .target h4 {
   font-weight: 400;
   margin-bottom: 7px;
 }
-.admin .container .products .add-product .product-form form .target .options {
+.admin-product-management .container .products .add-product .product-form form .product-details .target .options {
   display: flex;
   align-items: center;
   gap: 2em;
 }
-.admin .container .products .add-product .product-form form .target .options .opt {
+.admin-product-management .container .products .add-product .product-form form .product-details .target .options .opt {
   display: flex;
   align-items: center;
 }
-.admin .container .products .add-product .product-form form .target .options .opt p {
+.admin-product-management .container .products .add-product .product-form form .product-details .target .options .opt p {
   font-size: 18px;
   margin-bottom: 0;
 }
-.admin .container .products .add-product .product-form form .target .options .opt input {
+.admin-product-management .container .products .add-product .product-form form .product-details .target .options .opt input {
   width: 15px;
   height: 15px;
   margin-left: 7px;
 }
-.admin .container .products .add-product .product-form form .target .options .opt input:checked {
+.admin-product-management .container .products .add-product .product-form form .product-details .target .options .opt input:checked {
   background-color: red;
 }
-.admin .container .products .add-product .product-form form .images-inp {
+.admin-product-management .container .products .add-product .product-form form .product-details .images-inp {
   grid-area: imagesInp;
 }
-.admin .container .products .add-product .product-form form .images-inp h4 {
+.admin-product-management .container .products .add-product .product-form form .product-details .images-inp h4 {
   font-weight: 400;
   margin-bottom: 7px;
 }
-.admin .container .products .add-product .product-form form .images-inp .add-imgs {
+.admin-product-management .container .products .add-product .product-form form .product-details .images-inp .add-imgs {
   display: flex;
   align-items: center;
   gap: 2em;
 }
-.admin .container .products .add-product .product-form form .images-inp .add-imgs .drop-area {
+.admin-product-management .container .products .add-product .product-form form .product-details .images-inp .add-imgs .drop-area {
   width: 200px;
   height: 220px;
   background-color: #FFF;
   border-radius: 3px;
   border: 1px solid black;
 }
-.admin .container .products .add-product .product-form form .images-inp .add-imgs .drop-area .img-view {
+.admin-product-management .container .products .add-product .product-form form .product-details .images-inp .add-imgs .drop-area .img-view {
   position: relative;
   width: 100%;
   height: 100%;
@@ -197,27 +153,92 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.admin .container .products .add-product .product-form form .images-inp .add-imgs .drop-area .img-view .plus-icon {
+.admin-product-management .container .products .add-product .product-form form .product-details .images-inp .add-imgs .drop-area .img-view .plus-icon {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 65px;
 }
-.admin .container .products .add-product .product-form form .add-btn {
+.admin-product-management .container .products .add-product .product-form form .add-btn {
   width: 100%;
 }
-.admin .container .products .add-product .product-form form .add-btn [type=submit] {
+.admin-product-management .container .products .add-product .product-form form .add-btn [type=submit] {
   width: 7em;
   height: 2.2em;
   font-size: 18px;
 }
-.admin footer {
+.admin-product-management .container .products .products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+}
+.admin-product-management .container .products .products-list h2 {
+  font-size: 32px;
+}
+.admin-product-management .container .products .products-list select {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 0;
+}
+.admin-product-management .container .products .products-list .products {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
-.admin footer p {
+
+.admin-orders-management .container .orders-content {
+  width: 90%;
+  padding: 2em;
+}
+.admin-orders-management .container .orders-content .orders-table {
+  margin: 3em 0;
+  padding: 12px;
+  background-color: #f0f0f0;
+}
+.admin-orders-management .container .orders-content .orders-table .orders-types {
+  padding-bottom: 5px;
+}
+.admin-orders-management .container .orders-content .orders-table .orders-types ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.admin-orders-management .container .orders-content .orders-table .orders-types ul li {
+  font-size: 18px;
+}
+.admin-orders-management .container .orders-content .orders-table .search-orders-counter {
+  border-top: 1px solid #363636;
+  border-bottom: 1px solid #363636;
+  padding: 15px 0;
+}
+.admin-orders-management .container .orders-content .orders-table .search-orders-counter .search i {
+  color: #FFF;
+  background-color: #6533E1;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  border-bottom: 2px solid black;
+  padding: 15px 0;
+}
+header img {
+  width: 10em;
+}
+header p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
   color: #FFF;
   font-size: 18px;
 }/*# sourceMappingURL=adminPage.css.map */

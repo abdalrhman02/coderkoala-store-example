@@ -13,15 +13,22 @@ import './Styles/GlobalRules/globalRules.css';
 import './Styles/Components-Style/componentsStyle.css';
 import './Styles/HomePage/homePage.css';
 import './Styles/AdminPage/adminPage.css';
+import './Styles/Cart/cart.css';
 
 // Pages
 import App from './App';
-import Admin from './Pages/Admin';
+import AdminProductManagement from './Pages/AdminProductManagement';
+import AdminOrdersManagement from './Pages/AdminOrdersManagement';
+import ProductPage from './Pages/ProductPage';
+import Cart from './Pages/Cart';
 
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>, },
-  {path:"admin", element: <Admin/>, },
+  {path:"AdminProductManagement", element: <AdminProductManagement/>, },
+  {path:"AdminOrdersManagement", element: <AdminOrdersManagement/>, },
+  {path:"productPage", element: <ProductPage/>, },
+  {path:"Cart", element: <Cart/>, },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

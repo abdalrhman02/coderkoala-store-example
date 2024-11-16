@@ -1,68 +1,11 @@
 @import '../GlobalRules/globalRules.scss';
 
-.admin {
+// All admin pages here.
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2em;
-        border-bottom: 2px solid black;
-        padding: 15px 0;
-
-        img {
-            width: 10em;
-        }
-
-        p {
-            font-size: 18px;
-            font-weight: 600;
-        }
-    }
-
-    
+.admin-product-management {
     .container {
-        display: flex;
-        gap: 5em;
-
-        .admin-sidebar {
-            background-color: #EDEDED;
-            border-left: 2px solid $f-clr;
-            width: 12em;
-            padding: 15px;
-
-            
-            ul {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                gap: 15px;
-                
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                    background-color: #FFF;
-                    padding: 12px 15px;
-                    border-radius: 7px;
-                    width: 80%;
-
-
-                    i {
-                    font-size: 20px;
-                    transition: 0.4s;
-                    }
-
-                    p {
-
-                    }
-                }
-            }
-        }
-
         .products {
-            width: 80%;
+            width: 90%;
             
             .add-product {
                 margin: 40px 30px;
@@ -76,117 +19,113 @@
                     padding: 25px;
 
                     form {
-                        // display: grid;
-                        // grid-template-columns: 50% 50%;
-                        // grid-template-rows: auto;
-                        // grid-template-areas: 
-                        // 'nameInp priceInp'
-                        // 'descriptionInp targetInp'
-                        // 'imagesInp imagesInp'
-                        // ;
                         display: flex;
                         flex-wrap: wrap;
-                        gap: 2em 5em;
+                        gap: 2em;
 
-                        .name-inp {grid-area: nameInp;}
-                        .description-inp {grid-area: descriptionInp;}
-                        .price-inp {grid-area: priceInp;}
-
-                        .inp {
+                        .product-details {
                             display: flex;
-                            flex-direction: column;
+                            flex-wrap: wrap;
+                            gap: 2em 5em;
 
-                            label {
-                                font-size: 18px;
-                                margin-bottom: 7px
-                            }
-
-                            input {
-                                width: 28em;
-                                height: 2.4em;
-                                border-radius: 3px;
-                                border: 1px solid black;
-                            }
-
-                            textarea {
-                                width: 28em;
-                                height: 15em;
-                            }
-                        }
-
-                        .target {
-                            grid-area: targetInp;
-
-                            h4 {
-                                font-weight: 400;
-                                margin-bottom: 7px
-                            }
-
-                            .options {
+                            .inp {
                                 display: flex;
-                                align-items: center;
-                                gap: 2em;
-
-                                .opt {
+                                flex-direction: column;
+    
+                                label {
+                                    font-size: 18px;
+                                    margin-bottom: 7px
+                                }
+    
+                                input {
+                                    width: 28em;
+                                    height: 2.4em;
+                                    border-radius: 3px;
+                                    border: 1px solid black;
+                                    padding-right: 7px;
+                                }
+    
+                                textarea {
+                                    width: 28em;
+                                    height: 15em;
+                                    padding: 7px 7px 0 0 
+                                }
+                            }
+    
+                            .target {
+                                grid-area: targetInp;
+    
+                                h4 {
+                                    font-weight: 400;
+                                    margin-bottom: 7px
+                                }
+    
+                                .options {
                                     display: flex;
                                     align-items: center;
-        
-                                    p {
-                                        font-size: 18px;
-                                        margin-bottom: 0;
-                                    }
-        
-                                    input {
-                                        width: 15px;
-                                        height: 15px;
-                                        margin-left: 7px;
-
-                                        &:checked {
-                                            background-color: red;
+                                    gap: 2em;
+    
+                                    .opt {
+                                        display: flex;
+                                        align-items: center;
+            
+                                        p {
+                                            font-size: 18px;
+                                            margin-bottom: 0;
+                                        }
+            
+                                        input {
+                                            width: 15px;
+                                            height: 15px;
+                                            margin-left: 7px;
+    
+                                            &:checked {
+                                                background-color: red;
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-
-                        .images-inp {
-                            grid-area: imagesInp;
-
-                            h4 {
-                                font-weight: 400;
-                                margin-bottom: 7px
-                            }
-
-                            .add-imgs {
-                                display: flex;
-                                align-items: center;
-                                gap: 2em;
-
-                                .drop-area {
-                                    width: 200px;
-                                    height: 220px;
-                                    background-color: #FFF;
-                                    border-radius: 3px;
-                                    border: 1px solid black;
-
-                                    input {
-
-                                    }
-
-                                    .img-view {
-                                        position: relative;
-                                        width: 100%;
-                                        height: 100%;
-                                        background-position: center;
-                                        background-size: contain;
-                                        background-repeat: no-repeat;
-
-                                        .plus-icon {
-                                            @include center;
-                                            width: 65px;
+    
+                            .images-inp {
+                                grid-area: imagesInp;
+    
+                                h4 {
+                                    font-weight: 400;
+                                    margin-bottom: 7px
+                                }
+    
+                                .add-imgs {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2em;
+    
+                                    .drop-area {
+                                        width: 200px;
+                                        height: 220px;
+                                        background-color: #FFF;
+                                        border-radius: 3px;
+                                        border: 1px solid black;
+    
+                                        input {
+    
                                         }
+    
+                                        .img-view {
+                                            position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-position: center;
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+    
+                                            .plus-icon {
+                                                @include center;
+                                                width: 65px;
+                                            }
+                                        }
+                                        
                                     }
-                                    
                                 }
                             }
                         }
@@ -203,18 +142,118 @@
                     }
                 }
             }
+
+            .products-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 80px 0;
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                select {
+                    font-size: 18px;
+                    padding: 5px;
+                    margin: 10px 0;
+
+                    option {
+
+                    }
+                }
+
+                .products {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 2em;
+                }
+            }
         }
     }
+}
 
+.admin-orders-management {
 
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .container {
 
-        p {
-            color: #FFF;
-            font-size: 18px
+        .orders-content {
+            width: 90%;
+            padding: 2em;
+
+            .orders-table {
+                margin: 3em 0;
+                padding: 12px;
+                background-color: $light-elements-background;
+
+                .orders-types {
+                    padding-bottom: 5px;
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 2em;
+
+                        li {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .search-orders-counter {
+                    border-top: 1px solid #363636;
+                    border-bottom: 1px solid #363636;
+                    padding: 15px 0;
+                    
+                    .search {
+
+                        i {
+                            color: #FFF;
+                            background-color: $f-clr;
+                        }
+
+                        input {
+
+                        }
+                    }
+
+                    .orders-counter {
+
+                        p {
+
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+
+
+// Header and Footer
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+
+    img {
+        width: 10em;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+footer {
+    text-align: center;
+
+    p {
+        color: #FFF;
+        font-size: 18px
     }
 }
