@@ -189,7 +189,8 @@
                 background-color: $light-elements-background;
 
                 .orders-types {
-                    padding-bottom: 5px;
+                    padding-bottom: 10px;
+
                     ul {
                         display: flex;
                         align-items: center;
@@ -204,26 +205,105 @@
                 .search-orders-counter {
                     border-top: 1px solid #363636;
                     border-bottom: 1px solid #363636;
-                    padding: 15px 0;
+                    padding: 25px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                     
                     .search {
+                        width: 50%;
+                        display: flex;
 
                         i {
+                            position: relative;
+                            width: 2.5em;
                             color: #FFF;
                             background-color: $f-clr;
+                            margin-left: -4px;
+                            border-top-right-radius: 3px;
+                            border-bottom-right-radius: 3px;
+
+                            &::before {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                font-size: 21px;
+                            }
                         }
 
                         input {
-
+                            height: 2.2em;
+                            width: 60%;
+                            font-size: 15px;
+                            border-radius: 3px;
+                            border: 1px solid black;
+                            border-right: none;
+                            outline: none;
+                            padding-right: 10px;
                         }
                     }
 
                     .orders-counter {
 
                         p {
-
+                            font-size: 20px
                         }
                     }
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                    background-color: #fff;
+
+                    th {
+                        background-color: $light-elements-background;
+                        padding: 10px;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                    
+                    td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                    }
+
+                    tr {
+                        &:hover {
+                            background-color: $light-elements-background;
+                        }
+                    }
+
+                    .status {
+                        border: 1px solid;
+                        border-radius: 7px;
+                        padding: 7px;
+                        text-align: center;
+                        color: #FFF;
+
+                        &.done {
+                            background-color: #5FE46F;
+                            border-color: #10A321;
+                        }
+                        &.canceled {
+                            background-color: #FF7171;
+                            border-color: #FF2626;
+                        }
+                        &.delivery {
+                            background-color: #FFDA45;
+                            border-color: #B89300;
+                        }
+                        &.waiting {
+                            background-color: #71A2FF;
+                            border-color: #357CFF;
+                        }
+                    }
+                }
+                
+                table, th, td {
+                    border: 1px solid #ddd;
                 }
             }
         }
