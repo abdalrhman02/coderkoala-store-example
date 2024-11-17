@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 function AdminSideBar() {
     return (
         <div className="admin-sidebar">

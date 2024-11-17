@@ -1,19 +1,16 @@
 import React, { useRef, useState } from "react";
 
 // Components
-import ProductCard from '../Components/ProductCard';
-import AdminSideBar from '../Components/AdminSideBar';
-import EditProduct from '../Components/EditProduct';
+    import AdminHeader from '../../Components/Admin-Pages-Comps/AdminHeader'
+    import AdminFooter from '../../Components/Admin-Pages-Comps/AdminFooter'
+import AdminSideBar from '../../Components/Admin-Pages-Comps/AdminSideBar';
 
 function AdminOrdersManagement() {
 
 
     return (
         <div className="admin-orders-management">
-            <header>
-                <img src={require('../Images/logo.png')} alt="Logo" />
-                <p>الصفحة الخاصة بالمسؤول عن المتجر</p>
-            </header>
+            <AdminHeader />
 
             <div className="container">
                 <AdminSideBar />
@@ -49,9 +46,7 @@ function AdminOrdersManagement() {
                 </div>
             </div>
 
-            {/* <footer>
-                <p>تواصل معنا بحالة واجهتك اي مشاكل</p>
-            </footer> */}
+            {/* <AdminFooter /> */}
         </div>
     );
 }

@@ -1,5 +1,5 @@
 // Components
-import AdminSideBar from '../Components/AdminSideBar';
+import AdminSideBar from './Admin-Pages-Comps/AdminSideBar';
 import Product from '../Components/Product';
 
 function EditProduct() {

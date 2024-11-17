@@ -17,8 +17,8 @@ import './Styles/Cart/cart.css';
 
 // Pages
 import App from './App';
-import AdminProductManagement from './Pages/AdminProductManagement';
-import AdminOrdersManagement from './Pages/AdminOrdersManagement';
+import AdminProductManagement from './Pages/Admin-Pages/AdminProductManagement';
+import AdminOrdersManagement from './Pages/Admin-Pages/AdminOrdersManagement';
 import ProductPage from './Pages/ProductPage';
 import Cart from './Pages/Cart';
 
