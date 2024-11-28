@@ -7,6 +7,7 @@ header {
 
     .container {
         @include fl-sb;
+        width: 100%
     }
 
     .cart {
@@ -224,13 +225,13 @@ footer {
 }
 
 .title {
+    color:#FFF;
     background-color: $f-clr;
     padding: 6px 10px;
     border-bottom: 10px solid $s-clr;
 
     h2 {
         font-size: 22px;
-        color: #FFF
     }
 }
 

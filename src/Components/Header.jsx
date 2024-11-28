@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -31,7 +32,7 @@ function Header() {
 
                 <div className='cart'>
                     <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <Link to={'Cart'}><i class="fa-solid fa-cart-shopping"></i></Link>
                 </div>
             </div>
         </header>
@@ -51,7 +52,7 @@ function Header() {
 
                 <div className='cart'>
                     <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <Link to={'/Cart'}><i class="fa-solid fa-cart-shopping"></i></Link>
                 </div>
             </div>
         </header>

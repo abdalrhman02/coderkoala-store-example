@@ -18,7 +18,6 @@ function AdminOrdersManagement() {
     ]
 
     const [expandOrder, setExpandOrder] = useState(null);
-
     const toggleOrderDetails = (orderId) => {
         setExpandOrder(expandOrder === orderId ? null : orderId);
     };

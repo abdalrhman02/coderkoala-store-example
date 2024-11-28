@@ -14,6 +14,27 @@ ul {
   list-style-type: none;
 }
 
+.inp {
+  display: flex;
+  flex-direction: column;
+}
+.inp label {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.inp input {
+  width: 28em;
+  height: 2.4em;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding-right: 7px;
+}
+.inp textarea {
+  width: 28em;
+  height: 15em;
+  padding: 7px 7px 0 0;
+}
+
 .disFlex {
   display: flex;
 }
@@ -59,7 +80,12 @@ ul {
   flex: 1 1 75%;
   margin: 60px;
 }
-.homepage .container .homepage-content .intro {
+
+/*
+    Intro & Features products/comments
+    not with homepage beacause I need them in admin website edits page
+*/
+.intro {
   display: flex;
   align-items: center;
   gap: 3em;
@@ -68,25 +94,26 @@ ul {
   padding: 40px 30px;
   border-radius: 10px;
 }
-.homepage .container .homepage-content .intro .image img {
+.intro .image img {
   width: 23em;
 }
-.homepage .container .homepage-content .intro .text h1 {
+.intro .text h1 {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.4em;
 }
-.homepage .container .homepage-content .intro .text p {
+.intro .text p {
   font-size: 21px;
   font-weight: 500;
   margin: 25px 0;
 }
-.homepage .container .homepage-content .intro .text button {
+.intro .text button {
   width: 7em;
   height: 2.1em;
   font-size: 19px;
 }
-.homepage .container .homepage-content .features {
+
+.features {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,21 +121,22 @@ ul {
   gap: 5em;
   padding: 60px 0;
 }
-.homepage .container .homepage-content .features .fea {
+.features .fea {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.homepage .container .homepage-content .features .fea img {
+.features .fea img {
   width: 65px;
   margin-bottom: 10px;
 }
-.homepage .container .homepage-content .features .fea p {
+.features .fea p {
   font-size: 18px;
   max-width: 210px;
   text-align: center;
 }
-.homepage .container .homepage-content .products .products-list, .homepage .container .homepage-content .products .comments-list, .homepage .container .homepage-content .comments .products-list, .homepage .container .homepage-content .comments .comments-list {
+
+.products .products-list, .products .comments-list, .comments .products-list, .comments .comments-list {
   margin: 10px 0 100px;
   display: flex;
   flex-wrap: wrap;

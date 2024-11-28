@@ -14,6 +14,27 @@ ul {
   list-style-type: none;
 }
 
+.inp {
+  display: flex;
+  flex-direction: column;
+}
+.inp label {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.inp input {
+  width: 28em;
+  height: 2.4em;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding-right: 7px;
+}
+.inp textarea {
+  width: 28em;
+  height: 15em;
+  padding: 7px 7px 0 0;
+}
+
 .disFlex {
   display: flex;
 }
@@ -77,26 +98,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2em 5em;
-}
-.admin-product-management .container .products .add-product .product-form form .product-details .inp {
-  display: flex;
-  flex-direction: column;
-}
-.admin-product-management .container .products .add-product .product-form form .product-details .inp label {
-  font-size: 18px;
-  margin-bottom: 7px;
-}
-.admin-product-management .container .products .add-product .product-form form .product-details .inp input {
-  width: 28em;
-  height: 2.4em;
-  border-radius: 3px;
-  border: 1px solid black;
-  padding-right: 7px;
-}
-.admin-product-management .container .products .add-product .product-form form .product-details .inp textarea {
-  width: 28em;
-  height: 15em;
-  padding: 7px 7px 0 0;
 }
 .admin-product-management .container .products .add-product .product-form form .product-details .target {
   grid-area: targetInp;
@@ -297,6 +298,187 @@ ul {
   border: 1px solid #ddd;
 }
 
+.admin-website-edits .container .website-edits {
+  width: 90%;
+  padding: 2em;
+}
+.admin-website-edits .container .website-edits .elements-edit {
+  margin: 3em 0;
+  padding: 12px;
+  background-color: #f0f0f0;
+}
+.admin-website-edits .container .website-edits .elements-edit .logo {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+.admin-website-edits .container .website-edits .elements-edit .logo img {
+  width: 170px;
+}
+.admin-website-edits .container .website-edits .elements-edit .intro, .admin-website-edits .container .website-edits .elements-edit .features, .admin-website-edits .container .website-edits .elements-edit .products, .admin-website-edits .container .website-edits .elements-edit .title, .admin-website-edits .container .website-edits .elements-edit .comments {
+  position: relative;
+}
+.admin-website-edits .container .website-edits .elements-edit .edit-icon {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.admin-website-edits .container .website-edits .elements-edit .edit-icon i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.admin-website-edits .container .website-edits .edit-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.45);
+  z-index: 99;
+}
+.admin-website-edits .container .website-edits .edit-window .edit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  background-color: #EDEDED;
+  padding: 20px;
+  border-radius: 7px;
+  overflow-y: auto;
+}
+.admin-website-edits .container .website-edits .edit-window .edit h2 {
+  margin-bottom: 15px;
+}
+.admin-website-edits .container .website-edits .edit-window .edit .exit {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.admin-website-edits .container .website-edits .edit-window .edit .exit i {
+  font-size: 35px;
+  color: #6533E1;
+}
+.admin-website-edits .container .website-edits .intro-edit form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.admin-website-edits .container .website-edits .intro-edit form .drop-area {
+  display: block;
+  width: 200px;
+  height: 220px;
+  background-color: #FFF;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.admin-website-edits .container .website-edits .intro-edit form .drop-area .img-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.admin-website-edits .container .website-edits .intro-edit form .drop-area .img-view .plus-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+}
+.admin-website-edits .container .website-edits .features-edit .features-inps .fea {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.admin-website-edits .container .website-edits .features-edit .features-inps .fea img {
+  width: 55px;
+  margin-left: 10px;
+}
+.admin-website-edits .container .website-edits .features-edit .features-inps .fea .inp input {
+  font-size: 16px;
+  height: 3em;
+}
+.admin-website-edits .container .website-edits .products-comments-title .inp {
+  margin-bottom: 30px;
+}
+.admin-website-edits .container .website-edits .products-edit .products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0 100px;
+}
+.admin-website-edits .container .website-edits .products-edit .products-list select {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 0;
+}
+.admin-website-edits .container .website-edits .products-edit .products-list .products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.admin-website-edits .container .website-edits .products-edit .selected-products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.admin-website-edits .container .website-edits .delivery-edit {
+  margin-bottom: 10em;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form form .inp {
+  display: flex;
+  flex-direction: column;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form form .inp label {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form form .inp input {
+  width: 28em;
+  height: 2.4em;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding-right: 7px;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form form [type=submit] {
+  width: 6em;
+  height: 2em;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form .areas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #f0f0f0;
+  width: 40%;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.admin-website-edits .container .website-edits .delivery-edit .areas-form .areas-list .area {
+  background-color: #6533E1;
+  color: #FFF;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 8px 5px;
+  border-radius: 3px;
+}
 header {
   display: flex;
   align-items: center;
@@ -319,4 +501,4 @@ footer {
 footer p {
   color: #FFF;
   font-size: 18px;
-}/*# sourceMappingURL=adminPage.css.map */
+}/*# sourceMappingURL=adminPages.css.map */

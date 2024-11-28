@@ -38,12 +38,12 @@ function Cart() {
 
                                     <div className='inp'>
                                         <label for='phoneNumber'>رقم الهاتف</label>
-                                        <input type='text' id='phoneNumber' />
+                                        <input type='number' id='phoneNumber' />
                                     </div>
 
                                     <div className='inp'>
                                         <label for='extraPhoneNumber'> رقم اضافي (اختياري)</label>
-                                        <input type='text' id='extraPhoneNumber' />
+                                        <input type='number' id='extraPhoneNumber' />
                                     </div>
 
                                     <div className='inp'>
