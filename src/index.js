@@ -24,6 +24,7 @@ import AdminWebsiteEdits from './Pages/Admin-Pages/AdminWebsiteEdits';
 import ProductPage from './Pages/ProductPage';
 import Cart from './Pages/Cart';
 import ProfilePage from './Pages/Profile-Pages/ProfilePage';
+import Notifications from './Pages/Profile-Pages/Notifications';
 
 
 const router = createBrowserRouter([
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
   {path:"productPage", element: <ProductPage/>, },
   {path:"Cart", element: <Cart/>, },
   {path:"ProfilePage", element: <ProfilePage/>, },
+  {path:"Notifications", element: <Notifications/>, },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

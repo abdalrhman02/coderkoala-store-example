@@ -31,7 +31,7 @@ function Header() {
                 </div>
 
                 <div className='cart'>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-user"></i>
                     <Link to={'Cart'}><i class="fa-solid fa-cart-shopping"></i></Link>
                 </div>
             </div>
@@ -51,7 +51,7 @@ function Header() {
                 </div>
 
                 <div className='cart'>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-user"></i>
                     <Link to={'/Cart'}><i class="fa-solid fa-cart-shopping"></i></Link>
                 </div>
             </div>

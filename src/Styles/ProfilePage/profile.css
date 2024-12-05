@@ -1,8 +1,9 @@
-.profile-page .container .profile-content {
+.profile-page .container .profile-content, .profile-page .container .notifications-content, .notifications-page .container .profile-content, .notifications-page .container .notifications-content {
   flex: 1 1 85%;
   padding: 2em;
-  margin-bottom: 120px;
+  margin-bottom: 160px;
 }
+
 .profile-page .container .profile-content .profile-account {
   display: flex;
   align-items: center;
@@ -91,4 +92,11 @@
 .profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .status.waiting {
   background-color: #71A2FF;
   border-color: #357CFF;
+}
+
+.notifications-page .container .notifications-content .notis {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }/*# sourceMappingURL=profile.css.map */

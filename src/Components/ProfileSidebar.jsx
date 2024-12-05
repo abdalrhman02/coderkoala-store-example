@@ -16,7 +16,7 @@ function ProfileSidebar() {
         <div className="sidebar">
             <ul>
                 <li>
-                    <Link to={''}>
+                    <Link to={'/profilepage'}>
                         <div className="section">
                             <img src={require('../Images/Sidebar-Icons/Profile-page/user.png')} />
                             <p>الحساب الشخصي</p>
@@ -25,7 +25,7 @@ function ProfileSidebar() {
                 </li>
 
                 <li>
-                    <Link to={''}>
+                    <Link to={'/notifications'}>
                         <div className="section">
                             <img src={require('../Images/Sidebar-Icons/Profile-page/notification.png')} />
                             <p>الاشعارات</p>
