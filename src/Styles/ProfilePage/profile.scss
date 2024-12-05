@@ -1,0 +1,132 @@
+.profile-page {
+
+    .container {
+        
+        .profile-content {
+            flex: 1 1 85%;
+            padding: 2em;
+            margin-bottom: 120px;
+
+            .profile-account {
+                display: flex;
+                align-items: center;
+                background-color: #FFF;
+                border-radius: 14px;
+                height: 8em;
+                margin: 35px 0;
+                padding: 0px 25px;
+
+                .pr-image {
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+
+                .name-email {
+                    margin-right: 10px;
+                    .pr-name {
+                        font-size: 22px
+                    }
+    
+                    .pr-email {
+                        font-size: 15px
+                    }
+                }
+
+            }
+
+            .favorite-orderHistory {
+                background-color: #FFF;
+                padding: 25px;
+                border-radius: 14px;
+
+                // Titles
+                .favorite, .order-history {
+
+                    .title-2 {
+                        position: relative;
+                        width: fit-content;
+                        margin-bottom: 30px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -2px;
+                            right: 0;
+                            height: 3px;
+                            width: 50%;
+                            background-color: #000;
+                        }
+                    }
+                }
+
+                .favorite {
+                    .products {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px
+                    }
+                }
+
+                .order-history {
+                    margin-top: 100px;
+
+                    .the-orders {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+
+                        
+
+                        .order {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            padding: 10px 5px;
+                            background-color: #F4F4F2;
+                            border-radius: 7px;
+                            width: 70%;
+
+                            .expandIcon{
+
+                                img {
+                                    width: 30px;
+                                }
+                            }
+
+                            .order-details {
+
+                            }
+
+                            .status {
+                                border: 1px solid;
+                                border-radius: 7px;
+                                padding: 7px;
+                                text-align: center;
+                                color: #FFF;
+        
+                                &.done {
+                                    background-color: #5FE46F;
+                                    border-color: #10A321;
+                                }
+                                &.canceled {
+                                    background-color: #FF7171;
+                                    border-color: #FF2626;
+                                }
+                                &.delivery {
+                                    background-color: #FFDA45;
+                                    border-color: #B89300;
+                                }
+                                &.waiting {
+                                    background-color: #71A2FF;
+                                    border-color: #357CFF;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.profile-page .container .profile-content {
+  flex: 1 1 85%;
+  padding: 2em;
+  margin-bottom: 120px;
+}
+.profile-page .container .profile-content .profile-account {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 14px;
+  height: 8em;
+  margin: 35px 0;
+  padding: 0px 25px;
+}
+.profile-page .container .profile-content .profile-account .pr-image img {
+  border-radius: 50%;
+}
+.profile-page .container .profile-content .profile-account .name-email {
+  margin-right: 10px;
+}
+.profile-page .container .profile-content .profile-account .name-email .pr-name {
+  font-size: 22px;
+}
+.profile-page .container .profile-content .profile-account .name-email .pr-email {
+  font-size: 15px;
+}
+.profile-page .container .profile-content .favorite-orderHistory {
+  background-color: #FFF;
+  padding: 25px;
+  border-radius: 14px;
+}
+.profile-page .container .profile-content .favorite-orderHistory .favorite .title-2, .profile-page .container .profile-content .favorite-orderHistory .order-history .title-2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.profile-page .container .profile-content .favorite-orderHistory .favorite .title-2::after, .profile-page .container .profile-content .favorite-orderHistory .order-history .title-2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  height: 3px;
+  width: 50%;
+  background-color: #000;
+}
+.profile-page .container .profile-content .favorite-orderHistory .favorite .products {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history {
+  margin-top: 100px;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 5px;
+  background-color: #F4F4F2;
+  border-radius: 7px;
+  width: 70%;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .expandIcon img {
+  width: 30px;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .status {
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 7px;
+  text-align: center;
+  color: #FFF;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .status.done {
+  background-color: #5FE46F;
+  border-color: #10A321;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .status.canceled {
+  background-color: #FF7171;
+  border-color: #FF2626;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .status.delivery {
+  background-color: #FFDA45;
+  border-color: #B89300;
+}
+.profile-page .container .profile-content .favorite-orderHistory .order-history .the-orders .order .status.waiting {
+  background-color: #71A2FF;
+  border-color: #357CFF;
+}/*# sourceMappingURL=profile.css.map */

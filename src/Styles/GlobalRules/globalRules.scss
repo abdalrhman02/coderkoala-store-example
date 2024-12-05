@@ -4,6 +4,7 @@
 $f-clr: #6533E1;
 $s-clr: #00CE7F;
 $t-clr: #151550;
+$body-background: #f7f7f7;
 $light-elements-background: #f0f0f0;
 $button-hover: #01b872;
 
@@ -13,6 +14,8 @@ $button-hover: #01b872;
 // Elements
 a{text-decoration:none; color:black}
 ul{list-style-type:none;}
+body{background-color: $body-background}
+
 
 // Inputs that in admin pages
 .inp {

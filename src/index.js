@@ -14,6 +14,7 @@ import './Styles/Components-Style/componentsStyle.css';
 import './Styles/HomePage/homePage.css';
 import './Styles/AdminPage/adminPages.css';
 import './Styles/Cart/cart.css';
+import './Styles/ProfilePage/profile.css';
 
 // Pages
 import App from './App';
@@ -22,6 +23,7 @@ import AdminOrdersManagement from './Pages/Admin-Pages/AdminOrdersManagement';
 import AdminWebsiteEdits from './Pages/Admin-Pages/AdminWebsiteEdits';
 import ProductPage from './Pages/ProductPage';
 import Cart from './Pages/Cart';
+import ProfilePage from './Pages/Profile-Pages/ProfilePage';
 
 
 const router = createBrowserRouter([
@@ -31,6 +33,7 @@ const router = createBrowserRouter([
   {path:"AdminWebsiteEdits", element: <AdminWebsiteEdits/>, },
   {path:"productPage", element: <ProductPage/>, },
   {path:"Cart", element: <Cart/>, },
+  {path:"ProfilePage", element: <ProfilePage/>, },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
